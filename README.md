@@ -1,6 +1,6 @@
 # Visual Validation Demo
 
-###  RobotFramework with Python Visual Validation Library
+### RobotFramework with Python Visual Validation Library
 
 RobotFramework UI test for SauceLabs demosite with Visual Validation checks.
   
@@ -10,7 +10,13 @@ Library usage:
 First time through will generate Gold file images.  Second time through will run comparison.  
 Check RobotFramework logs for results.
 
-Demo work with `headless chrome` and `chrome` browsers.  (See CommonWeb.robot ${BROWSER})
+Demo works with `headless chrome` and `chrome` browsers.  (See CommonWeb.robot ${BROWSER})
+
+### Sample Passing report:
+https://mshaferweb.github.io/VisualValidationDemo/results_sample/pass/report.html
+
+### Sample Failing report:
+https://mshaferweb.github.io/VisualValidationDemo/results_sample/fail/report.html
 
 ### Setup instructions for ubuntu 18.04
 
