@@ -27,11 +27,12 @@ Install Python Requirements:
 
 Run Suite:
 
-> robot -d results -L debug --variable username:standard_user testsuites
+First time through generate Gold results with `standard_user`:
 > robot -d results -L debug --variable username:standard_user testsuites
 
-Check RobotFramework logs for Success.  Run a third time with "problem_user" and then see failed test run with
-image comparison.
+Second time through generate New results with `standard_user` and trigger validation.  Test will Pass:
+> robot -d results -L debug --variable username:standard_user testsuites
 
+Third time through run with `problem_user` and test will "Fail". Comparison will be against original Gold results.
 > robot -d results -L debug --variable username:problem_user testsuites
 
