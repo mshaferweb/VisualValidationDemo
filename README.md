@@ -2,13 +2,15 @@
 
 ### RobotFramework with Python Visual Validation Library
 
-RobotFramework UI test for SauceLabs demosite with Visual Validation checks.
+RobotFramework UI test for SauceLabs demosite with Visual Validation checks.  
   
 Library usage:
-`VV Check  <Page Tag Name>`
+`VV Check  <Page Tag Name>  <Element Area to Ignore>(Optional)`
 
 First time through will generate Gold file images.  Second time through will run comparison.  
 Check RobotFramework logs for results.
+
+Element Area to Ignore will find the element specified using selenium webdriver and skip comparing the image differences
 
 Demo works with `headless chrome` and `chrome` browsers.  (See CommonWeb.robot ${BROWSER})
 
@@ -22,7 +24,9 @@ https://mshaferweb.github.io/VisualValidationDemo/results_sample/fail/report.htm
 
 Install Python Requirements:
 > sudo apt-get install python3-pip
+>
 > sudo apt-get install python3-pil.imagetk
+>
 > sudo pip3 install -r requirements.txt
 
 Run Suite:

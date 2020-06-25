@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.2 on linux)" generated="20200623 14:15:41.171" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.2 on linux)" generated="20200625 10:18:26.547" rpa="false">
 <suite id="s1" name="Testsuites" source="/home/micshafe/development/VisualValidationDemo/testsuites">
 <suite id="s1-s1" name="VVDemo" source="/home/micshafe/development/VisualValidationDemo/testsuites/VVDemo.robot">
 <test id="s1-s1-t1" name="Purchase Product on SauceDemo">
@@ -20,31 +20,31 @@
 <arg>https://www.saucedemo.com/index.html</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:41.279" level="INFO">Opening browser 'headless chrome' to base url 'https://www.saucedemo.com/index.html'.</msg>
-<msg timestamp="20200623 14:15:42.285" level="DEBUG">POST http://127.0.0.1:40643/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}</msg>
-<msg timestamp="20200623 14:15:42.286" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:40643</msg>
-<msg timestamp="20200623 14:15:42.415" level="DEBUG">http://127.0.0.1:40643 "POST /session HTTP/1.1" 200 647</msg>
-<msg timestamp="20200623 14:15:42.415" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.415" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/timeouts {"script": 5000}</msg>
-<msg timestamp="20200623 14:15:42.416" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/timeouts HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.416" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.416" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/timeouts {"implicit": 0}</msg>
-<msg timestamp="20200623 14:15:42.416" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/timeouts HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.416" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.417" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/url {"url": "https://www.saucedemo.com/index.html"}</msg>
-<msg timestamp="20200623 14:15:42.717" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/url HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.717" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.718" level="DEBUG">Opened browser with session id e22600aa30f97ed969902a56e5e9105f.</msg>
-<status status="PASS" starttime="20200623 14:15:41.279" endtime="20200623 14:15:42.718"></status>
+<msg timestamp="20200625 10:18:26.650" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/index.html'.</msg>
+<msg timestamp="20200625 10:18:27.656" level="DEBUG">POST http://127.0.0.1:56663/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}</msg>
+<msg timestamp="20200625 10:18:27.657" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:56663</msg>
+<msg timestamp="20200625 10:18:27.992" level="DEBUG">http://127.0.0.1:56663 "POST /session HTTP/1.1" 200 647</msg>
+<msg timestamp="20200625 10:18:27.992" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:27.993" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/timeouts {"script": 5000}</msg>
+<msg timestamp="20200625 10:18:27.993" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:27.994" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:27.994" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/timeouts {"implicit": 0}</msg>
+<msg timestamp="20200625 10:18:27.994" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:27.994" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:27.994" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/url {"url": "https://www.saucedemo.com/index.html"}</msg>
+<msg timestamp="20200625 10:18:28.326" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:28.327" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:28.327" level="DEBUG">Opened browser with session id d3ce2fd63a86c17e0672166ca97caa92.</msg>
+<status status="PASS" starttime="20200625 10:18:26.650" endtime="20200625 10:18:28.327"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${SELSPEED}</arg>
 </arguments>
-<status status="PASS" starttime="20200623 14:15:42.718" endtime="20200623 14:15:42.718"></status>
+<status status="PASS" starttime="20200625 10:18:28.327" endtime="20200625 10:18:28.327"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:41.278" endtime="20200623 14:15:42.718"></status>
+<status status="PASS" starttime="20200625 10:18:26.650" endtime="20200625 10:18:28.328"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -52,26 +52,26 @@
 <arg>1024</arg>
 <arg>768</arg>
 </arguments>
-<msg timestamp="20200623 14:15:42.719" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/window/rect {"x": null, "y": null, "width": 1024, "height": 768}</msg>
-<msg timestamp="20200623 14:15:42.823" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/window/rect HTTP/1.1" 200 49</msg>
-<msg timestamp="20200623 14:15:42.824" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200623 14:15:42.718" endtime="20200623 14:15:42.824"></status>
+<msg timestamp="20200625 10:18:28.328" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/window/rect {"x": null, "y": null, "width": 1024, "height": 768}</msg>
+<msg timestamp="20200625 10:18:28.433" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/window/rect HTTP/1.1" 200 51</msg>
+<msg timestamp="20200625 10:18:28.434" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200625 10:18:28.328" endtime="20200625 10:18:28.935"></status>
 </kw>
 <kw name="Send Var To Python" library="VisualValidation">
 <arguments>
 <arg>outdir</arg>
 <arg>${outputdir}</arg>
 </arguments>
-<status status="PASS" starttime="20200623 14:15:42.824" endtime="20200623 14:15:42.825"></status>
+<status status="PASS" starttime="20200625 10:18:28.935" endtime="20200625 10:18:28.935"></status>
 </kw>
 <kw name="Send Var To Python" library="VisualValidation">
 <arguments>
 <arg>version</arg>
 <arg>${version}</arg>
 </arguments>
-<status status="PASS" starttime="20200623 14:15:42.825" endtime="20200623 14:15:42.825"></status>
+<status status="PASS" starttime="20200625 10:18:28.935" endtime="20200625 10:18:28.935"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:41.278" endtime="20200623 14:15:42.825"></status>
+<status status="PASS" starttime="20200625 10:18:26.650" endtime="20200625 10:18:28.935"></status>
 </kw>
 <kw name="Login to SauceDemo" library="CommonWeb">
 <kw name="type" library="CommonWeb">
@@ -85,19 +85,19 @@
 <arg>${element}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:42.827" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
-<msg timestamp="20200623 14:15:42.828" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/elements {"using": "css selector", "value": "[id=\"user-name\"]"}</msg>
-<msg timestamp="20200623 14:15:42.847" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/elements HTTP/1.1" 200 90</msg>
-<msg timestamp="20200623 14:15:42.848" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.848" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/element/57119709-3d79-4a9b-a130-6de644e20421/clear {"id": "57119709-3d79-4a9b-a130-6de644e20421"}</msg>
-<msg timestamp="20200623 14:15:42.901" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/element/57119709-3d79-4a9b-a130-6de644e20421/clear HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.901" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.901" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/element/57119709-3d79-4a9b-a130-6de644e20421/value {"text": "problem_user", "value": ["p", "r", "o", "b", "l", "e", "m", "_", "u", "s", "e", "r"], "id": "57119709-3d79-4a9b-a130-6de644e20421"}</msg>
-<msg timestamp="20200623 14:15:42.943" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/element/57119709-3d79-4a9b-a130-6de644e20421/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.943" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200623 14:15:42.827" endtime="20200623 14:15:42.943"></status>
+<msg timestamp="20200625 10:18:28.937" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<msg timestamp="20200625 10:18:28.937" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/elements {"using": "css selector", "value": "[id=\"user-name\"]"}</msg>
+<msg timestamp="20200625 10:18:28.949" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20200625 10:18:28.949" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:29.450" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/clear {"id": "83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d"}</msg>
+<msg timestamp="20200625 10:18:29.501" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/clear HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:29.501" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:30.002" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/value {"text": "problem_user", "value": ["p", "r", "o", "b", "l", "e", "m", "_", "u", "s", "e", "r"], "id": "83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d"}</msg>
+<msg timestamp="20200625 10:18:30.085" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:30.085" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200625 10:18:28.936" endtime="20200625 10:18:30.586"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:42.826" endtime="20200623 14:15:42.943"></status>
+<status status="PASS" starttime="20200625 10:18:28.936" endtime="20200625 10:18:30.587"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -108,16 +108,16 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:42.944" level="INFO">Clicking element 'id=password'.</msg>
-<msg timestamp="20200623 14:15:42.944" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/elements {"using": "css selector", "value": "[id=\"password\"]"}</msg>
-<msg timestamp="20200623 14:15:42.951" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/elements HTTP/1.1" 200 90</msg>
-<msg timestamp="20200623 14:15:42.951" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.951" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/element/4850c51a-7498-4b7e-87eb-54e24f18c71c/click {"id": "4850c51a-7498-4b7e-87eb-54e24f18c71c"}</msg>
-<msg timestamp="20200623 14:15:42.975" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/element/4850c51a-7498-4b7e-87eb-54e24f18c71c/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.975" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200623 14:15:42.944" endtime="20200623 14:15:42.975"></status>
+<msg timestamp="20200625 10:18:30.588" level="INFO">Clicking element 'id=password'.</msg>
+<msg timestamp="20200625 10:18:30.588" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/elements {"using": "css selector", "value": "[id=\"password\"]"}</msg>
+<msg timestamp="20200625 10:18:30.603" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20200625 10:18:30.603" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:31.104" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/481cae56-18e7-4915-ad63-8b72764985be/click {"id": "481cae56-18e7-4915-ad63-8b72764985be"}</msg>
+<msg timestamp="20200625 10:18:31.162" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/element/481cae56-18e7-4915-ad63-8b72764985be/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:31.163" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200625 10:18:30.587" endtime="20200625 10:18:31.664"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:42.943" endtime="20200623 14:15:42.975"></status>
+<status status="PASS" starttime="20200625 10:18:30.587" endtime="20200625 10:18:31.664"></status>
 </kw>
 <kw name="type" library="CommonWeb">
 <arguments>
@@ -130,61 +130,69 @@
 <arg>${element}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:42.976" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<msg timestamp="20200623 14:15:42.976" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/elements {"using": "css selector", "value": "[id=\"password\"]"}</msg>
-<msg timestamp="20200623 14:15:42.980" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/elements HTTP/1.1" 200 90</msg>
-<msg timestamp="20200623 14:15:42.981" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.981" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/element/4850c51a-7498-4b7e-87eb-54e24f18c71c/clear {"id": "4850c51a-7498-4b7e-87eb-54e24f18c71c"}</msg>
-<msg timestamp="20200623 14:15:42.995" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/element/4850c51a-7498-4b7e-87eb-54e24f18c71c/clear HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:42.995" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:42.995" level="DEBUG">POST http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/element/4850c51a-7498-4b7e-87eb-54e24f18c71c/value {"text": "secret_sauce", "value": ["s", "e", "c", "r", "e", "t", "_", "s", "a", "u", "c", "e"], "id": "4850c51a-7498-4b7e-87eb-54e24f18c71c"}</msg>
-<msg timestamp="20200623 14:15:43.019" level="DEBUG">http://127.0.0.1:40643 "POST /session/e22600aa30f97ed969902a56e5e9105f/element/4850c51a-7498-4b7e-87eb-54e24f18c71c/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200623 14:15:43.019" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200623 14:15:42.975" endtime="20200623 14:15:43.019"></status>
+<msg timestamp="20200625 10:18:31.665" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg timestamp="20200625 10:18:31.666" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/elements {"using": "css selector", "value": "[id=\"password\"]"}</msg>
+<msg timestamp="20200625 10:18:31.677" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20200625 10:18:31.678" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:32.178" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/481cae56-18e7-4915-ad63-8b72764985be/clear {"id": "481cae56-18e7-4915-ad63-8b72764985be"}</msg>
+<msg timestamp="20200625 10:18:32.216" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/element/481cae56-18e7-4915-ad63-8b72764985be/clear HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:32.217" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:32.718" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/481cae56-18e7-4915-ad63-8b72764985be/value {"text": "secret_sauce", "value": ["s", "e", "c", "r", "e", "t", "_", "s", "a", "u", "c", "e"], "id": "481cae56-18e7-4915-ad63-8b72764985be"}</msg>
+<msg timestamp="20200625 10:18:32.793" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/element/481cae56-18e7-4915-ad63-8b72764985be/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20200625 10:18:32.793" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200625 10:18:31.665" endtime="20200625 10:18:33.294"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:42.975" endtime="20200623 14:15:43.019"></status>
+<status status="PASS" starttime="20200625 10:18:31.664" endtime="20200625 10:18:33.294"></status>
 </kw>
 <kw name="Title Should Start With" library="VisualValidation">
 <arguments>
 <arg>Swag Labs</arg>
 </arguments>
-<msg timestamp="20200623 14:15:43.019" level="DEBUG">GET http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/title {}</msg>
-<msg timestamp="20200623 14:15:43.022" level="DEBUG">http://127.0.0.1:40643 "GET /session/e22600aa30f97ed969902a56e5e9105f/title HTTP/1.1" 200 21</msg>
-<msg timestamp="20200623 14:15:43.022" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200623 14:15:43.019" endtime="20200623 14:15:43.022"></status>
+<msg timestamp="20200625 10:18:33.295" level="DEBUG">GET http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/title {}</msg>
+<msg timestamp="20200625 10:18:33.301" level="DEBUG">http://127.0.0.1:56663 "GET /session/d3ce2fd63a86c17e0672166ca97caa92/title HTTP/1.1" 200 21</msg>
+<msg timestamp="20200625 10:18:33.302" level="DEBUG">Finished Request</msg>
+<status status="PASS" starttime="20200625 10:18:33.294" endtime="20200625 10:18:33.802"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
 <arguments>
 <arg>VV Check</arg>
 <arg>Login</arg>
+<arg>user-name</arg>
 </arguments>
 <kw name="Vv Check" library="VisualValidation">
+<doc>Determines differences between screenshots
+Tag is the name assigned to the PNG files for display in RobotFramework Results
+Element to ignore is the Selenium locator region that will be</doc>
 <arguments>
 <arg>Login</arg>
+<arg>user-name</arg>
 </arguments>
-<msg timestamp="20200623 14:15:43.022" level="DEBUG">GET http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/screenshot {}</msg>
-<msg timestamp="20200623 14:15:43.123" level="DEBUG">http://127.0.0.1:40643 "GET /session/e22600aa30f97ed969902a56e5e9105f/screenshot HTTP/1.1" 200 72784</msg>
-<msg timestamp="20200623 14:15:43.123" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:43.123" level="DEBUG">GET http://127.0.0.1:40643/session/e22600aa30f97ed969902a56e5e9105f/screenshot {}</msg>
-<msg timestamp="20200623 14:15:43.189" level="DEBUG">http://127.0.0.1:40643 "GET /session/e22600aa30f97ed969902a56e5e9105f/screenshot HTTP/1.1" 200 72784</msg>
-<msg timestamp="20200623 14:15:43.189" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200623 14:15:43.189" level="INFO">Finished taking screenshot</msg>
-<msg timestamp="20200623 14:15:44.284" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
-<msg timestamp="20200623 14:15:44.284" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Login_R.png"</msg>
-<msg timestamp="20200623 14:15:44.284" level="INFO">Gold:</msg>
-<msg timestamp="20200623 14:15:44.284" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Login_G.png"</msg>
-<msg timestamp="20200623 14:15:44.284" level="INFO">New Failed:</msg>
-<msg timestamp="20200623 14:15:44.284" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Login_N.png"</msg>
-<msg timestamp="20200623 14:15:44.284" level="FAIL">('Comparison done: Login Images are different.', 13)</msg>
-<msg timestamp="20200623 14:15:44.285" level="DEBUG">Traceback (most recent call last):
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 56, in vv_check
-    self._analyze()
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 94, in _analyze
-    raise Exception('Comparison done: ' + self.tag + ' Images are different.', diff)</msg>
-<status status="FAIL" starttime="20200623 14:15:43.022" endtime="20200623 14:15:44.285"></status>
+<msg timestamp="20200625 10:18:33.804" level="DEBUG">POST http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element {"using": "css selector", "value": "[id=\"user-name\"]"}</msg>
+<msg timestamp="20200625 10:18:33.818" level="DEBUG">http://127.0.0.1:56663 "POST /session/d3ce2fd63a86c17e0672166ca97caa92/element HTTP/1.1" 200 88</msg>
+<msg timestamp="20200625 10:18:33.819" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:34.319" level="INFO">&lt;selenium.webdriver.remote.webelement.WebElement (session="d3ce2fd63a86c17e0672166ca97caa92", element="83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d")&gt;</msg>
+<msg timestamp="20200625 10:18:34.319" level="DEBUG">GET http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/rect {"id": "83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d"}</msg>
+<msg timestamp="20200625 10:18:34.326" level="DEBUG">http://127.0.0.1:56663 "GET /session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/rect HTTP/1.1" 200 57</msg>
+<msg timestamp="20200625 10:18:34.326" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:34.827" level="DEBUG">GET http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/rect {"id": "83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d"}</msg>
+<msg timestamp="20200625 10:18:34.835" level="DEBUG">http://127.0.0.1:56663 "GET /session/d3ce2fd63a86c17e0672166ca97caa92/element/83b0e6fb-1f42-4a9d-b1b1-e46a20d8741d/rect HTTP/1.1" 200 57</msg>
+<msg timestamp="20200625 10:18:34.836" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:35.337" level="INFO">Ignore "user-name" location {'x': 171, 'y': 167}</msg>
+<msg timestamp="20200625 10:18:35.337" level="INFO">Ignore "user-name" size {'height': 42, 'width': 316}</msg>
+<msg timestamp="20200625 10:18:35.337" level="DEBUG">GET http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/screenshot {}</msg>
+<msg timestamp="20200625 10:18:35.432" level="DEBUG">http://127.0.0.1:56663 "GET /session/d3ce2fd63a86c17e0672166ca97caa92/screenshot HTTP/1.1" 200 68752</msg>
+<msg timestamp="20200625 10:18:35.432" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:35.934" level="DEBUG">GET http://127.0.0.1:56663/session/d3ce2fd63a86c17e0672166ca97caa92/screenshot {}</msg>
+<msg timestamp="20200625 10:18:36.029" level="DEBUG">http://127.0.0.1:56663 "GET /session/d3ce2fd63a86c17e0672166ca97caa92/screenshot HTTP/1.1" 200 68828</msg>
+<msg timestamp="20200625 10:18:36.029" level="DEBUG">Finished Request</msg>
+<msg timestamp="20200625 10:18:36.530" level="INFO">Finished taking screenshot</msg>
+<msg timestamp="20200625 10:18:37.323" level="INFO">Comparison done:  Login Images match</msg>
+<msg timestamp="20200625 10:18:37.323" level="INFO">Ignored locator region indicated by grey boxes</msg>
+<msg timestamp="20200625 10:18:37.323" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Login_R.png"</msg>
+<status status="PASS" starttime="20200625 10:18:33.803" endtime="20200625 10:18:37.323"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:43.022" endtime="20200623 14:15:44.285"></status>
+<status status="PASS" starttime="20200625 10:18:33.803" endtime="20200625 10:18:37.323"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -195,12 +203,12 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:44.285" level="INFO">Clicking element 'xpath=//input[@value='LOGIN']'.</msg>
-<status status="PASS" starttime="20200623 14:15:44.285" endtime="20200623 14:15:44.829"></status>
+<msg timestamp="20200625 10:18:37.323" level="INFO">Clicking element 'xpath=//input[@value='LOGIN']'.</msg>
+<status status="PASS" starttime="20200625 10:18:37.323" endtime="20200625 10:18:38.901"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:44.285" endtime="20200623 14:15:44.829"></status>
+<status status="PASS" starttime="20200625 10:18:37.323" endtime="20200625 10:18:38.902"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:42.826" endtime="20200623 14:15:44.829"></status>
+<status status="PASS" starttime="20200625 10:18:28.936" endtime="20200625 10:18:38.902"></status>
 </kw>
 <kw name="Click Backpack and then add to Cart" library="CommonWeb">
 <kw name="click" library="CommonWeb">
@@ -212,10 +220,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:44.831" level="INFO">Clicking element 'xpath=//a[@id='item_4_title_link']/div'.</msg>
-<status status="PASS" starttime="20200623 14:15:44.831" endtime="20200623 14:15:45.007"></status>
+<msg timestamp="20200625 10:18:38.904" level="INFO">Clicking element 'xpath=//a[@id='item_4_title_link']/div'.</msg>
+<status status="PASS" starttime="20200625 10:18:38.904" endtime="20200625 10:18:40.210"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:44.830" endtime="20200623 14:15:45.007"></status>
+<status status="PASS" starttime="20200625 10:18:38.903" endtime="20200625 10:18:40.210"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -226,10 +234,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:45.007" level="INFO">Clicking element 'xpath=//div[@id='inventory_item_container']/div/div/div/button'.</msg>
-<status status="PASS" starttime="20200623 14:15:45.007" endtime="20200623 14:15:45.051"></status>
+<msg timestamp="20200625 10:18:40.211" level="INFO">Clicking element 'xpath=//div[@id='inventory_item_container']/div/div/div/button'.</msg>
+<status status="PASS" starttime="20200625 10:18:40.211" endtime="20200625 10:18:41.284"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:45.007" endtime="20200623 14:15:45.051"></status>
+<status status="PASS" starttime="20200625 10:18:40.210" endtime="20200625 10:18:41.284"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -238,25 +246,28 @@
 <arg>Product Page</arg>
 </arguments>
 <kw name="Vv Check" library="VisualValidation">
+<doc>Determines differences between screenshots
+Tag is the name assigned to the PNG files for display in RobotFramework Results
+Element to ignore is the Selenium locator region that will be</doc>
 <arguments>
 <arg>Product Page</arg>
 </arguments>
-<msg timestamp="20200623 14:15:45.359" level="INFO">Finished taking screenshot</msg>
-<msg timestamp="20200623 14:15:46.492" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
-<msg timestamp="20200623 14:15:46.492" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Product Page_R.png"</msg>
-<msg timestamp="20200623 14:15:46.492" level="INFO">Gold:</msg>
-<msg timestamp="20200623 14:15:46.492" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Product Page_G.png"</msg>
-<msg timestamp="20200623 14:15:46.492" level="INFO">New Failed:</msg>
-<msg timestamp="20200623 14:15:46.492" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Product Page_N.png"</msg>
-<msg timestamp="20200623 14:15:46.492" level="FAIL">('Comparison done: Product Page Images are different.', 1245)</msg>
-<msg timestamp="20200623 14:15:46.492" level="DEBUG">Traceback (most recent call last):
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 56, in vv_check
+<msg timestamp="20200625 10:18:42.599" level="INFO">Finished taking screenshot</msg>
+<msg timestamp="20200625 10:18:43.459" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
+<msg timestamp="20200625 10:18:43.459" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Product Page_R.png"</msg>
+<msg timestamp="20200625 10:18:43.459" level="INFO">Gold:</msg>
+<msg timestamp="20200625 10:18:43.459" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Product Page_G.png"</msg>
+<msg timestamp="20200625 10:18:43.459" level="INFO">New Failed:</msg>
+<msg timestamp="20200625 10:18:43.459" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Product Page_N.png"</msg>
+<msg timestamp="20200625 10:18:43.460" level="FAIL">('Comparison done: Product Page Images are different.', 1500)</msg>
+<msg timestamp="20200625 10:18:43.460" level="DEBUG">Traceback (most recent call last):
+  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 67, in vv_check
     self._analyze()
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 94, in _analyze
+  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 133, in _analyze
     raise Exception('Comparison done: ' + self.tag + ' Images are different.', diff)</msg>
-<status status="FAIL" starttime="20200623 14:15:45.051" endtime="20200623 14:15:46.492"></status>
+<status status="FAIL" starttime="20200625 10:18:41.285" endtime="20200625 10:18:43.460"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:45.051" endtime="20200623 14:15:46.492"></status>
+<status status="FAIL" starttime="20200625 10:18:41.284" endtime="20200625 10:18:43.460"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -267,12 +278,12 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:46.493" level="INFO">Clicking element 'xpath=//div[@id='inventory_item_container']/div/button'.</msg>
-<status status="PASS" starttime="20200623 14:15:46.493" endtime="20200623 14:15:46.523"></status>
+<msg timestamp="20200625 10:18:43.460" level="INFO">Clicking element 'xpath=//div[@id='inventory_item_container']/div/button'.</msg>
+<status status="PASS" starttime="20200625 10:18:43.460" endtime="20200625 10:18:44.547"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:46.492" endtime="20200623 14:15:46.523"></status>
+<status status="PASS" starttime="20200625 10:18:43.460" endtime="20200625 10:18:44.548"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:44.830" endtime="20200623 14:15:46.523"></status>
+<status status="FAIL" starttime="20200625 10:18:38.902" endtime="20200625 10:18:44.548"></status>
 </kw>
 <kw name="Click Shirt Add to Cart" library="CommonWeb">
 <kw name="click" library="CommonWeb">
@@ -284,10 +295,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:46.524" level="INFO">Clicking element 'xpath=//div[@id='inventory_container']/div/div[3]/div[3]/button'.</msg>
-<status status="PASS" starttime="20200623 14:15:46.523" endtime="20200623 14:15:46.578"></status>
+<msg timestamp="20200625 10:18:44.551" level="INFO">Clicking element 'xpath=//div[@id='inventory_container']/div/div[3]/div[3]/button'.</msg>
+<status status="PASS" starttime="20200625 10:18:44.550" endtime="20200625 10:18:45.604"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:46.523" endtime="20200623 14:15:46.578"></status>
+<status status="PASS" starttime="20200625 10:18:44.549" endtime="20200625 10:18:45.604"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -296,27 +307,30 @@
 <arg>Add To Cart</arg>
 </arguments>
 <kw name="Vv Check" library="VisualValidation">
+<doc>Determines differences between screenshots
+Tag is the name assigned to the PNG files for display in RobotFramework Results
+Element to ignore is the Selenium locator region that will be</doc>
 <arguments>
 <arg>Add To Cart</arg>
 </arguments>
-<msg timestamp="20200623 14:15:46.759" level="INFO">Finished taking screenshot</msg>
-<msg timestamp="20200623 14:15:47.920" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
-<msg timestamp="20200623 14:15:47.920" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Add To Cart_R.png"</msg>
-<msg timestamp="20200623 14:15:47.920" level="INFO">Gold:</msg>
-<msg timestamp="20200623 14:15:47.920" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Add To Cart_G.png"</msg>
-<msg timestamp="20200623 14:15:47.920" level="INFO">New Failed:</msg>
-<msg timestamp="20200623 14:15:47.920" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Add To Cart_N.png"</msg>
-<msg timestamp="20200623 14:15:47.921" level="FAIL">('Comparison done: Add To Cart Images are different.', 2208)</msg>
-<msg timestamp="20200623 14:15:47.921" level="DEBUG">Traceback (most recent call last):
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 56, in vv_check
+<msg timestamp="20200625 10:18:46.803" level="INFO">Finished taking screenshot</msg>
+<msg timestamp="20200625 10:18:47.682" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
+<msg timestamp="20200625 10:18:47.682" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Add To Cart_R.png"</msg>
+<msg timestamp="20200625 10:18:47.682" level="INFO">Gold:</msg>
+<msg timestamp="20200625 10:18:47.682" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Add To Cart_G.png"</msg>
+<msg timestamp="20200625 10:18:47.682" level="INFO">New Failed:</msg>
+<msg timestamp="20200625 10:18:47.682" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Add To Cart_N.png"</msg>
+<msg timestamp="20200625 10:18:47.682" level="FAIL">('Comparison done: Add To Cart Images are different.', 2310)</msg>
+<msg timestamp="20200625 10:18:47.682" level="DEBUG">Traceback (most recent call last):
+  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 67, in vv_check
     self._analyze()
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 94, in _analyze
+  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 133, in _analyze
     raise Exception('Comparison done: ' + self.tag + ' Images are different.', diff)</msg>
-<status status="FAIL" starttime="20200623 14:15:46.578" endtime="20200623 14:15:47.921"></status>
+<status status="FAIL" starttime="20200625 10:18:45.605" endtime="20200625 10:18:47.682"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:46.578" endtime="20200623 14:15:47.921"></status>
+<status status="FAIL" starttime="20200625 10:18:45.604" endtime="20200625 10:18:47.682"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:46.523" endtime="20200623 14:15:47.921"></status>
+<status status="FAIL" starttime="20200625 10:18:44.549" endtime="20200625 10:18:47.682"></status>
 </kw>
 <kw name="Click Cart and Check Out" library="CommonWeb">
 <kw name="click" library="CommonWeb">
@@ -328,10 +342,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:47.922" level="INFO">Clicking element 'css=path'.</msg>
-<status status="PASS" starttime="20200623 14:15:47.921" endtime="20200623 14:15:47.987"></status>
+<msg timestamp="20200625 10:18:47.683" level="INFO">Clicking element 'css=path'.</msg>
+<status status="PASS" starttime="20200625 10:18:47.683" endtime="20200625 10:18:48.831"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:47.921" endtime="20200623 14:15:47.988"></status>
+<status status="PASS" starttime="20200625 10:18:47.683" endtime="20200625 10:18:48.831"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -342,10 +356,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:47.988" level="INFO">Clicking element 'link=CHECKOUT'.</msg>
-<status status="PASS" starttime="20200623 14:15:47.988" endtime="20200623 14:15:48.072"></status>
+<msg timestamp="20200625 10:18:48.832" level="INFO">Clicking element 'link=CHECKOUT'.</msg>
+<status status="PASS" starttime="20200625 10:18:48.832" endtime="20200625 10:18:49.927"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:47.988" endtime="20200623 14:15:48.072"></status>
+<status status="PASS" starttime="20200625 10:18:48.831" endtime="20200625 10:18:49.928"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -356,10 +370,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:48.073" level="INFO">Clicking element 'id=first-name'.</msg>
-<status status="PASS" starttime="20200623 14:15:48.073" endtime="20200623 14:15:48.122"></status>
+<msg timestamp="20200625 10:18:49.929" level="INFO">Clicking element 'id=first-name'.</msg>
+<status status="PASS" starttime="20200625 10:18:49.928" endtime="20200625 10:18:50.983"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:48.072" endtime="20200623 14:15:48.122"></status>
+<status status="PASS" starttime="20200625 10:18:49.928" endtime="20200625 10:18:50.984"></status>
 </kw>
 <kw name="type" library="CommonWeb">
 <arguments>
@@ -372,10 +386,10 @@
 <arg>${element}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:48.122" level="INFO">Typing text 'John' into text field 'id=first-name'.</msg>
-<status status="PASS" starttime="20200623 14:15:48.122" endtime="20200623 14:15:48.158"></status>
+<msg timestamp="20200625 10:18:50.985" level="INFO">Typing text 'John' into text field 'id=first-name'.</msg>
+<status status="PASS" starttime="20200625 10:18:50.985" endtime="20200625 10:18:52.575"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:48.122" endtime="20200623 14:15:48.158"></status>
+<status status="PASS" starttime="20200625 10:18:50.984" endtime="20200625 10:18:52.575"></status>
 </kw>
 <kw name="type" library="CommonWeb">
 <arguments>
@@ -388,10 +402,10 @@
 <arg>${element}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:48.159" level="INFO">Typing text 'Doe' into text field 'id=last-name'.</msg>
-<status status="PASS" starttime="20200623 14:15:48.159" endtime="20200623 14:15:48.210"></status>
+<msg timestamp="20200625 10:18:52.577" level="INFO">Typing text 'Doe' into text field 'id=last-name'.</msg>
+<status status="PASS" starttime="20200625 10:18:52.576" endtime="20200625 10:18:54.181"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:48.159" endtime="20200623 14:15:48.210"></status>
+<status status="PASS" starttime="20200625 10:18:52.575" endtime="20200625 10:18:54.181"></status>
 </kw>
 <kw name="type" library="CommonWeb">
 <arguments>
@@ -404,10 +418,10 @@
 <arg>${element}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:48.211" level="INFO">Typing text '12345' into text field 'id=postal-code'.</msg>
-<status status="PASS" starttime="20200623 14:15:48.211" endtime="20200623 14:15:48.262"></status>
+<msg timestamp="20200625 10:18:54.183" level="INFO">Typing text '12345' into text field 'id=postal-code'.</msg>
+<status status="PASS" starttime="20200625 10:18:54.182" endtime="20200625 10:18:55.817"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:48.211" endtime="20200623 14:15:48.262"></status>
+<status status="PASS" starttime="20200625 10:18:54.181" endtime="20200625 10:18:55.817"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -416,25 +430,28 @@
 <arg>Checkout</arg>
 </arguments>
 <kw name="Vv Check" library="VisualValidation">
+<doc>Determines differences between screenshots
+Tag is the name assigned to the PNG files for display in RobotFramework Results
+Element to ignore is the Selenium locator region that will be</doc>
 <arguments>
 <arg>Checkout</arg>
 </arguments>
-<msg timestamp="20200623 14:15:48.407" level="INFO">Finished taking screenshot</msg>
-<msg timestamp="20200623 14:15:49.485" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
-<msg timestamp="20200623 14:15:49.485" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Checkout_R.png"</msg>
-<msg timestamp="20200623 14:15:49.485" level="INFO">Gold:</msg>
-<msg timestamp="20200623 14:15:49.485" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Checkout_G.png"</msg>
-<msg timestamp="20200623 14:15:49.485" level="INFO">New Failed:</msg>
-<msg timestamp="20200623 14:15:49.485" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Checkout_N.png"</msg>
-<msg timestamp="20200623 14:15:49.485" level="FAIL">('Comparison done: Checkout Images are different.', 12)</msg>
-<msg timestamp="20200623 14:15:49.485" level="DEBUG">Traceback (most recent call last):
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 56, in vv_check
+<msg timestamp="20200625 10:18:56.996" level="INFO">Finished taking screenshot</msg>
+<msg timestamp="20200625 10:18:57.815" level="INFO">Image with diffs highlighted in red between Gold and New Failed:</msg>
+<msg timestamp="20200625 10:18:57.815" level="INFO" html="yes">&lt;img style="border: 3px dashed #8b0000;" src="v1/images/Checkout_R.png"</msg>
+<msg timestamp="20200625 10:18:57.815" level="INFO">Gold:</msg>
+<msg timestamp="20200625 10:18:57.815" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Checkout_G.png"</msg>
+<msg timestamp="20200625 10:18:57.815" level="INFO">New Failed:</msg>
+<msg timestamp="20200625 10:18:57.815" level="INFO" html="yes">&lt;img style="border: 4px dashed #ee0000;" src="v1/images/Checkout_N.png"</msg>
+<msg timestamp="20200625 10:18:57.816" level="FAIL">('Comparison done: Checkout Images are different.', 16)</msg>
+<msg timestamp="20200625 10:18:57.816" level="DEBUG">Traceback (most recent call last):
+  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 67, in vv_check
     self._analyze()
-  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 94, in _analyze
+  File "/home/micshafe/development/VisualValidationDemo/library/VisualValidation.py", line 133, in _analyze
     raise Exception('Comparison done: ' + self.tag + ' Images are different.', diff)</msg>
-<status status="FAIL" starttime="20200623 14:15:48.263" endtime="20200623 14:15:49.485"></status>
+<status status="FAIL" starttime="20200625 10:18:55.818" endtime="20200625 10:18:57.816"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:48.262" endtime="20200623 14:15:49.485"></status>
+<status status="FAIL" starttime="20200625 10:18:55.818" endtime="20200625 10:18:57.816"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -445,10 +462,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:49.486" level="INFO">Clicking element 'xpath=//input[@value='CONTINUE']'.</msg>
-<status status="PASS" starttime="20200623 14:15:49.486" endtime="20200623 14:15:49.575"></status>
+<msg timestamp="20200625 10:18:57.816" level="INFO">Clicking element 'xpath=//input[@value='CONTINUE']'.</msg>
+<status status="PASS" starttime="20200625 10:18:57.816" endtime="20200625 10:18:58.908"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:49.485" endtime="20200623 14:15:49.575"></status>
+<status status="PASS" starttime="20200625 10:18:57.816" endtime="20200625 10:18:58.908"></status>
 </kw>
 <kw name="click" library="CommonWeb">
 <arguments>
@@ -459,10 +476,10 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:49.575" level="INFO">Clicking element 'link=FINISH'.</msg>
-<status status="PASS" starttime="20200623 14:15:49.575" endtime="20200623 14:15:49.715"></status>
+<msg timestamp="20200625 10:18:58.909" level="INFO">Clicking element 'link=FINISH'.</msg>
+<status status="PASS" starttime="20200625 10:18:58.909" endtime="20200625 10:19:00.052"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:49.575" endtime="20200623 14:15:49.716"></status>
+<status status="PASS" starttime="20200625 10:18:58.908" endtime="20200625 10:19:00.052"></status>
 </kw>
 <kw name="assertText" library="CommonWeb">
 <arguments>
@@ -475,10 +492,10 @@
 <arg>${element}</arg>
 <arg>${value}</arg>
 </arguments>
-<msg timestamp="20200623 14:15:49.757" level="INFO">Element 'xpath=//div[@id='checkout_complete_container']/h2' contains text 'THANK YOU FOR YOUR ORDER'.</msg>
-<status status="PASS" starttime="20200623 14:15:49.717" endtime="20200623 14:15:49.757"></status>
+<msg timestamp="20200625 10:19:01.088" level="INFO">Element 'xpath=//div[@id='checkout_complete_container']/h2' contains text 'THANK YOU FOR YOUR ORDER'.</msg>
+<status status="PASS" starttime="20200625 10:19:00.053" endtime="20200625 10:19:01.088"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:49.716" endtime="20200623 14:15:49.757"></status>
+<status status="PASS" starttime="20200625 10:19:00.052" endtime="20200625 10:19:01.088"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -487,39 +504,40 @@
 <arg>Order Confirm</arg>
 </arguments>
 <kw name="Vv Check" library="VisualValidation">
+<doc>Determines differences between screenshots
+Tag is the name assigned to the PNG files for display in RobotFramework Results
+Element to ignore is the Selenium locator region that will be</doc>
 <arguments>
 <arg>Order Confirm</arg>
 </arguments>
-<msg timestamp="20200623 14:15:49.912" level="INFO">Finished taking screenshot</msg>
-<msg timestamp="20200623 14:15:50.983" level="INFO">Comparison done:  Order Confirm Images match</msg>
-<msg timestamp="20200623 14:15:50.983" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Order Confirm_G.png"</msg>
-<status status="PASS" starttime="20200623 14:15:49.758" endtime="20200623 14:15:50.983"></status>
+<msg timestamp="20200625 10:19:02.269" level="INFO">Finished taking screenshot</msg>
+<msg timestamp="20200625 10:19:03.094" level="INFO">Comparison done:  Order Confirm Images match</msg>
+<msg timestamp="20200625 10:19:03.094" level="INFO" html="yes">&lt;img style="border: 4px dashed #458b00;" src="v1/images/Order Confirm_G.png"</msg>
+<status status="PASS" starttime="20200625 10:19:01.089" endtime="20200625 10:19:03.095"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:49.757" endtime="20200623 14:15:50.983"></status>
+<status status="PASS" starttime="20200625 10:19:01.089" endtime="20200625 10:19:03.095"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:47.921" endtime="20200623 14:15:50.983"></status>
+<status status="FAIL" starttime="20200625 10:18:47.683" endtime="20200625 10:19:03.095"></status>
 </kw>
 <kw name="End Web Test" library="CommonWeb" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<msg timestamp="20200623 14:15:50.984" level="DEBUG">Closing browser with session id e22600aa30f97ed969902a56e5e9105f.</msg>
-<status status="PASS" starttime="20200623 14:15:50.984" endtime="20200623 14:15:51.040"></status>
+<msg timestamp="20200625 10:19:03.095" level="DEBUG">Closing browser with session id d3ce2fd63a86c17e0672166ca97caa92.</msg>
+<status status="PASS" starttime="20200625 10:19:03.095" endtime="20200625 10:19:03.649"></status>
 </kw>
-<status status="PASS" starttime="20200623 14:15:50.984" endtime="20200623 14:15:51.040"></status>
+<status status="PASS" starttime="20200625 10:19:03.095" endtime="20200625 10:19:03.649"></status>
 </kw>
-<status status="FAIL" starttime="20200623 14:15:41.278" endtime="20200623 14:15:51.040" critical="yes">Several failures occurred:
+<status status="FAIL" starttime="20200625 10:18:26.649" endtime="20200625 10:19:03.649" critical="yes">Several failures occurred:
 
-1) ('Comparison done: Login Images are different.', 13)
+1) ('Comparison done: Product Page Images are different.', 1500)
 
-2) ('Comparison done: Product Page Images are different.', 1245)
+2) ('Comparison done: Add To Cart Images are different.', 2310)
 
-3) ('Comparison done: Add To Cart Images are different.', 2208)
-
-4) ('Comparison done: Checkout Images are different.', 12)</status>
+3) ('Comparison done: Checkout Images are different.', 16)</status>
 </test>
-<status status="FAIL" starttime="20200623 14:15:41.185" endtime="20200623 14:15:51.042"></status>
+<status status="FAIL" starttime="20200625 10:18:26.560" endtime="20200625 10:19:03.650"></status>
 </suite>
-<status status="FAIL" starttime="20200623 14:15:41.172" endtime="20200623 14:15:51.045"></status>
+<status status="FAIL" starttime="20200625 10:18:26.547" endtime="20200625 10:19:03.651"></status>
 </suite>
 <statistics>
 <total>

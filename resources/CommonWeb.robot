@@ -5,8 +5,8 @@ Library  ../library/VisualValidation.py
 
 
 *** Variables ***
-${BROWSER}   headless chrome
-${SELSPEED}  0.0s
+${BROWSER}   chrome
+${SELSPEED}  0.5
 ${user_name}  standard_user
 ${version}   v1
 
@@ -26,7 +26,7 @@ Login to SauceDemo
     click    id=password
     type    id=password    secret_sauce
     title_should_start_with  Swag Labs
-    Run Keyword And Continue On Failure  VV Check  Login
+    Run Keyword And Continue On Failure  VV Check  Login  user-name
     click    xpath=//input[@value='LOGIN']
 
 Click Backpack and then add to Cart

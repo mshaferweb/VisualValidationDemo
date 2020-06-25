@@ -1,5 +1,7 @@
 import os
 import unittest
+from time import sleep
+
 from PIL import Image, ImageDraw
 from robot.libraries.BuiltIn import BuiltIn
 from robot.api import logger
@@ -34,8 +36,17 @@ class VisualValidation:
             raise AssertionError("Title '%s' did not start with '%s'"
                                  % (title, expected))
 
-    def vv_check(self, tag):
+    def vv_check(self, tag, element_to_ignore=None):
+        """
+        Determines differences between screenshots
+        Tag is the name assigned to the PNG files for display in RobotFramework Results
+        Element to ignore is the Selenium locator region that will be
+        """
         self.tag = tag
+        self.element_to_ignore = element_to_ignore
+        if self.element_to_ignore is not None:
+            self.set_ignore_element_region()
+
         if not self.robot_vars["outdir"]:
             raise Exception('"outputdir" needs to be passd to Python via "send var to python"')
         self.html_link_path = self.robot_vars["version"] + '/images/'
@@ -63,6 +74,10 @@ class VisualValidation:
         self.lib.driver.get_screenshot_as_png()
         self.write_to_robot_log("Finished taking screenshot")
 
+    def overlap(self, start1, end1, start2, end2):
+        """Does the range (start1, end1) overlap with (start2, end2)?"""
+        return end1 >= start2 and end2 >= start1
+
     def _analyze(self):
         screenshot_gold = Image.open(self.gold)
         screenshot_new = Image.open(self.new)
@@ -76,6 +91,26 @@ class VisualValidation:
 
         for y in range(0, screen_height, block_height + 1):
             for x in range(0, screen_width, block_width + 1):
+
+                if self.element_to_ignore is not None:
+
+                    i_loc = self.ignore_location
+                    (ix, iy) = (i_loc['x'],i_loc['y'])
+
+                    i_size = self.ignore_size
+                    (iw,ih) = (i_size['width'],i_size['height'])
+
+                    x_overlap = self.overlap(x,x + block_width,ix,ix + iw)
+                    y_overlap = self.overlap(y,y + block_width,iy,iy + ih)
+
+                    if x_overlap and y_overlap:
+                        #self.write_to_robot_log_debug('## Intersection X ' + str(x)  + ' ' + str(x + block_width) + ' ' + str(ix) + ' ' + str(ix + iw))
+                        #self.write_to_robot_log_debug('## Intersection Y ' + str(y)  + ' ' + str(y + block_width) + ' ' + str(iy) + ' ' + str(iy + ih))
+
+                        draw = ImageDraw.Draw(screenshot_gold)
+                        draw.rectangle((x, y, x + block_width, y + block_height), outline="grey")
+                        continue
+
                 region_gold = self.process_region(screenshot_gold, x, y, block_width, block_height)
                 region_new = self.process_region(screenshot_new, x, y, block_width, block_height)
 
@@ -86,9 +121,13 @@ class VisualValidation:
 
         screenshot_gold.save(self.screenshots_path + self.tag + '_R.png')
 
-        if diff == 0:
+        if diff == 0 and self.element_to_ignore is not None:
             self.write_to_robot_log('Comparison done:  ' + self.tag + ' Images match')
-            self.write_html_image_gold()
+            self.write_to_robot_log('Ignored locator region indicated by grey boxes')
+            self.write_html_image(self.html_link_path + self.tag + '_R.png')
+        elif diff == 0:
+            self.write_to_robot_log('Comparison done:  ' + self.tag + ' Images match')
+            self.write_html_image(self.gold_html)
         else:
             self.write_html_image_diff(self.html_link_path + self.tag + '_R.png')
             raise Exception('Comparison done: ' + self.tag + ' Images are different.', diff)
@@ -109,15 +148,32 @@ class VisualValidation:
 
         return region_total / factor
 
+
+    def set_ignore_element_region(self):
+        locator = self.element_to_ignore
+        e = self.lib.driver.find_element_by_id(locator)
+        self.write_to_robot_log_debug(e)
+        self.ignore_location = e.location
+        self.ignore_size = e.size
+        self.write_to_robot_log_debug('Ignore "' + locator + '" location ' + str(self.ignore_location))
+        self.write_to_robot_log_debug('Ignore "' + locator + '" size ' + str(self.ignore_size))
+
+
     def write_to_robot_log(self, message):
         import logging
-
         logging.basicConfig()
         logging.root.setLevel(logging.INFO)
         logging.info(message)
 
-    def write_html_image_gold(self):
-        logger.info('<img style="border: 4px dashed #458b00;" src="' + self.gold_html + '"', html=True)
+    def write_to_robot_log_debug(self, message):
+        import logging
+
+        logging.basicConfig()
+        logging.root.setLevel(logging.DEBUG)
+        logging.info(message)
+
+    def write_html_image(self, image):
+        logger.info('<img style="border: 4px dashed #458b00;" src="' + image + '"', html=True)
 
     def write_html_image_diff(self, path_image):
         logger.info(
